@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeCrafters | Student Software Solutions</title>
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (Do not remove) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Custom Fonts & Config -->
+    <!-- Google Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
@@ -28,13 +28,9 @@
         .animate-fade-in-up {
             animation: fade-in-up 0.8s ease-out forwards;
         }
-
-        .glass-card {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
     </style>
+
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -94,7 +90,6 @@
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
-        <!-- Background Gradients -->
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-indigo-600/20 rounded-full blur-[120px] -z-10"></div>
         <div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] -z-10"></div>
 
@@ -154,7 +149,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Service 1: College Projects -->
+                <!-- Service 1 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="graduation-cap" class="text-pink-400 w-8 h-8"></i>
@@ -167,7 +162,7 @@
                     </div>
                 </div>
 
-                <!-- Service 2: Web Development -->
+                <!-- Service 2 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="code" class="text-indigo-400 w-8 h-8"></i>
@@ -176,11 +171,12 @@
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Modern, responsive websites for your portfolio, business, or startup.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs font-medium bg-slate-800 text-slate-300 px-2 py-1 rounded-md border border-slate-700">Landing Pages</span>
+                        <span class="text-xs font-medium bg-slate-800 text-slate-300 px-2 py-1 rounded-md border border-slate-700">E-commerce</span>
                         <span class="text-xs font-medium bg-slate-800 text-slate-300 px-2 py-1 rounded-md border border-slate-700">Portfolio</span>
                     </div>
                 </div>
 
-                <!-- Service 3: Presentations -->
+                <!-- Service 3 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="cpu" class="text-orange-400 w-8 h-8"></i>
@@ -189,7 +185,7 @@
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Engaging, high-impact slide decks for your project.</p>
                 </div>
 
-                <!-- Service 4: Urgent Tasks -->
+                <!-- Service 4 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="zap" class="text-yellow-400 w-8 h-8"></i>
@@ -202,7 +198,7 @@
                     </div>
                 </div>
 
-                <!-- Service 5: Project/Seminar Report -->
+                <!-- Service 5 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="file-text" class="text-teal-400 w-8 h-8"></i>
@@ -211,7 +207,7 @@
                     <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive, well-researched documentation for your project, seminar, or academic review.</p>
                 </div>
 
-                <!-- Service 6: Resume & CV Writing -->
+                <!-- Service 6 -->
                 <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl hover:bg-slate-800/50 hover:border-indigo-500/30 transition-all group duration-300">
                     <div class="mb-4 bg-slate-950 w-14 h-14 rounded-xl flex items-center justify-center border border-slate-800 group-hover:scale-110 transition-transform">
                         <i data-lucide="file-badge" class="text-rose-400 w-8 h-8"></i>
@@ -236,24 +232,38 @@
                 <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent -translate-y-1/2 -z-10"></div>
 
                 <div class="grid md:grid-cols-4 gap-8">
-                    <!-- Steps 1-4 (Identical to previous, shortened for brevity in code view but fully rendered) -->
+                    <!-- Step 1 -->
                     <div class="relative bg-slate-900 md:bg-transparent p-6 md:p-0 rounded-2xl border border-slate-800 md:border-none">
-                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">01</div>
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">
+                            01
+                        </div>
                         <h3 class="text-xl font-bold mb-2 text-center md:text-left">Fill Form</h3>
                         <p class="text-slate-400 text-sm leading-relaxed text-center md:text-left">Tell us about your requirements via our Google Form.</p>
                     </div>
+
+                    <!-- Step 2 -->
                     <div class="relative bg-slate-900 md:bg-transparent p-6 md:p-0 rounded-2xl border border-slate-800 md:border-none">
-                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">02</div>
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">
+                            02
+                        </div>
                         <h3 class="text-xl font-bold mb-2 text-center md:text-left">Get Quote</h3>
                         <p class="text-slate-400 text-sm leading-relaxed text-center md:text-left">We analyze the work and give you a student-friendly price.</p>
                     </div>
+
+                    <!-- Step 3 -->
                     <div class="relative bg-slate-900 md:bg-transparent p-6 md:p-0 rounded-2xl border border-slate-800 md:border-none">
-                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">03</div>
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">
+                            03
+                        </div>
                         <h3 class="text-xl font-bold mb-2 text-center md:text-left">Development</h3>
                         <p class="text-slate-400 text-sm leading-relaxed text-center md:text-left">We build your project while keeping you updated.</p>
                     </div>
+
+                    <!-- Step 4 -->
                     <div class="relative bg-slate-900 md:bg-transparent p-6 md:p-0 rounded-2xl border border-slate-800 md:border-none">
-                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">04</div>
+                        <div class="w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center font-bold text-lg mb-4 shadow-lg shadow-indigo-600/20 mx-auto md:mx-0 z-10 relative">
+                            04
+                        </div>
                         <h3 class="text-xl font-bold mb-2 text-center md:text-left">Delivery</h3>
                         <p class="text-slate-400 text-sm leading-relaxed text-center md:text-left">Receive the code, documentation, and a demo session.</p>
                     </div>
@@ -268,7 +278,7 @@
         </div>
     </section>
 
-    <!-- NEW SECTION: FAQ -->
+    <!-- FAQ Section -->
     <section id="faq" class="py-24 px-6 relative">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-16">
@@ -388,10 +398,12 @@
             if (isHidden) {
                 mobileMenu.classList.remove('hidden');
                 mobileMenu.classList.add('flex');
+                // Change icon to X
                 menuIcon.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
             } else {
                 mobileMenu.classList.add('hidden');
                 mobileMenu.classList.remove('flex');
+                // Change icon back to Menu
                 menuIcon.innerHTML = '<line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line>';
             }
         });
